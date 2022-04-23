@@ -348,120 +348,18 @@ button.small {
 }
 
 @media only screen and (max-width: 720px) {
-  .navigation {
-    flex-direction: column;
-  }
-
-  nav {
-    flex-direction: column;
+  header {
+    padding-top: 1rem;
   }
 
   header nav ul li {
     margin: 0 1rem 0 0;
   }
-}
 
-@media only screen and (min-width: 600px) {
-  :root {
-    --baseFontSize: 112.5%;
+  nav {
+    flex-direction: column;
   }
-
-  .grid {
-    display: grid;
+  .navigation {
+    flex-direction: column;
   }
-
-  .flex {
-    display: flex;
-  }
-}
-
-.fake-logo {
-  font-size: var(--baseFontSize);
-  margin: 0;
-}
-
-.card {
-  padding: 2em;
-  background: var(--cardBg);
-  box-shadow: var(--shadow-3);
-  border-radius: var(--borderRadius);
-}
-
-/* First item will never have margin top */
-.card > *:first-child {
-  margin-top: 0;
-}
-
-/* last item will never have margin bottom */
-.card > *:last-child {
-  margin-bottom: 0;
-}
-
-/* Theming */
-.dark {
-  --cardBg: var(--darkGrey);
-  --background: var(--black);
-  --textColor: var(--lightGrey);
-  --headerBackground: var(--darkGrey);
-  --footerBackground: var(--darkGrey);
-  --buttonTextColor: var(--black);
-}
-
-.oled {
-  --black: #000;
-  --cardBg: var(--darkGrey);
-  --headerBackground: var(--darkGrey);
-  --footerBackground: var(--darkGrey);
-}
-
-.theme {
-  /* Define Colors as colors */
-  --green: #4fc4cf;
-  --red: #ff5470;
-  --yellow: #fbdd74;
-  --black: #181818;
-  --darkBlue: #994ff3;
-  --grey: #bfbfbf;
-  --darkGrey: #222;
-  --lightGrey: #f2f4f6;
-  --white: #fff;
-
-  /* Define Color Intentions */
-  --primary: var(--green);
-  --danger: var(--red);
-  --background: var(--lightGrey);
-  --textColor: var(--black);
-  --buttonTextColor: var(--black);
-  --lineColor: var(--grey);
-  --cardBg: var(--white);
-  --headerBackground: var(--black);
-  --footerBackground: var(--black);
-
-  /* Styles */
-  --line: solid 1px var(--lineColor);
-
-  /* Type */
-  --headingFont: "helvetica";
-  --bodyFont: "Work Sans", sans-serif;
-  --baseFontSize: 100%;
-  --h1: 3.052rem;
-  --h2: 2.441rem;
-  --h3: 1.953rem;
-  --h4: 1.563rem;
-  --h5: 1.25rem;
-  --text-small: 0.8rem;
-
-  /* Elevation - Shadows */
-  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0 10px 10px -5px rgba(0, 0, 0, 0.04);
-
-  /* Positioning */
-  --containerPadding: 2.5%;
-  --headerHeight: 3rem;
-  --borderRadius: 10px;
 }
